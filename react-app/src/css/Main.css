@@ -1,0 +1,37 @@
+/******************/
+/*main*/
+/******************/
+main h1{
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text--color);
+  margin-bottom: 20px;
+}
+
+
+main{
+  display: block;
+  width: 300px;
+  margin: auto;
+}
+
+.start_menu .flex_row .btn_square{
+  width: 137px;
+}
+
+.start_menu .flex_row, .start_menu .flex_column {
+  margin-bottom: 20px;
+}
+
+
+
+
+/*@media screen and (max-width: 767px) {*/
+  main h1{
+    font-size: 1rem;
+    margin: 40px 0 20px 0;
+  }
+
+
+
+/*}*/

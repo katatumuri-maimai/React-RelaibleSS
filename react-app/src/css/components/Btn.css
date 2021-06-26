@@ -1,0 +1,100 @@
+/******************/
+/*btn*/
+/******************/
+
+.btn_close{
+  display: block;
+  width: 32px;
+  height: 34px;
+  text-align: center;
+  margin: 1px;
+  padding: 1px;
+}
+.btn_close i{
+  font-size: 17px;
+}
+.btn_close p{
+ font-size: 8px;
+ margin: 0;
+ margin-top: -5px;
+}
+
+.btn_maincolor{
+  background-color: var(--main--color);
+}
+
+.btn_accentcolor{
+  background-color: var(--accent--color);
+}
+
+.btn_maincolor,.btn_accentcolor,.btn_maincolor a:link, .btn_maincolor a:visited, .btn_accentcolor a:link, .btn_accentcolor a:visited{
+  color: var(--btn-text--color);
+}
+
+.btn_square{
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+.btn_square a,.btn_square .a{
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+}
+
+
+.btn_shadow{
+  box-shadow: 0 3px 6px 0 var(--shadow--color);
+}
+
+
+
+/* ========================================================
+矢印アイコン
+=========================================================*/
+
+
+
+
+/* ========================================================
+ページトップに戻るボタン
+=========================================================*/
+.backtotop-btn {
+  width: 7rem;
+  height: 7rem;
+  background-color: var(--topbtn--background--color);
+  border-radius: 50%;
+  text-align: center;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  transform : translateY(8rem);
+  transition : all 1s ease 0s;
+}
+.backtotop-btn:hover{
+  background-color: var(--topbtn--background--color);
+  opacity: 1;
+}
+
+.backtotop-btn:active{
+  box-shadow: 0 6px 12px 10px var(--shadow--color);
+}
+
+.backtotop-btn.fadein{
+transform : translateY(-5px);
+transition : all 1s ease 0s;
+}
+
+
+.backtotop-btn  i{
+  font-size: 5rem;
+  color: var(--topbtn--color);
+  margin-top: 0.8rem;
+}

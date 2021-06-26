@@ -1,0 +1,25 @@
+FROM node:16-alpine3.11
+WORKDIR /usr/src/app
+
+RUN   apk update && \
+      apk add curl && \
+      apk add bash && \
+      apk add openjdk11 && \
+      apk add python3 && \
+      pip3 install --upgrade pip && \
+      pip3 install flask && \
+      pip3 install flask_restful && \
+      pip3 install -U flask-cors && \
+      apk add py3-pillow && \
+      apk update && \
+      apk upgrade && \
+      npm install -g agentkeepalive --save && \
+      npm install -g npm --save && \
+      npm install -g npm-check-updates --save
+
+RUN echo $PATH
+ENV PATH $PATH:./node_modules/.bin
+
+ADD  my-start.sh  /str/
+RUN  chmod +x /str/my-start.sh
+CMD  sh -c 'sh /str/my-start.sh'

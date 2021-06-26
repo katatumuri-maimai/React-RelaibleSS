@@ -1,0 +1,26 @@
+version: '3'
+services:
+ node:
+   build:
+     context: .
+     dockerfile: ./Dockerfile_node
+   volumes:
+    - ./:/usr/src/app
+   # command: >
+   #    sh -c '
+   #      cd react-app
+   #      ncu -u
+   #      ncu -g
+   #      npm install
+   #      npm start
+   #    '
+
+   ports:
+    - 3000:3000
+    - 6060:6060
+    - 4000:4000 # Emulator Suite UI
+    - 5000:5000 # Firebase Hosting
+    - 5001:5001 # Clound Functions
+    - 9000:9000 # Realtime Database
+    - 8080:8080 # Cloud Firestore
+    - 8085:8085 # Cloud Pub/Sub

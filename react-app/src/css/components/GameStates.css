@@ -1,0 +1,37 @@
+/******************/
+/*NewGame*/
+/******************/
+.GameState_Num{
+  display:block;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  color: var(--btn-text--color);
+  background-color: var(--textbox--border--color);
+  border-radius: 50px;
+}
+
+.GameState_T{
+  display:block;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--textbox--border--color);
+  margin-top: -10px;
+}
+
+
+
+.GameState_Num_Now{
+  background-color: var(--main--color);
+}
+
+.GameState_T_Now{
+  color: var(--main--color);
+
+}

@@ -1,0 +1,228 @@
+/******************/
+/*NewGame*/
+/******************/
+
+
+.GameRoom .flex_row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-content :flex-start;
+  justify-content: space-around;
+}
+
+.GameRoom .Title_input input{
+  margin: 20px 0;
+
+}
+
+
+.GameRoom .has_Error_message{
+  margin: 10px 0;
+
+}
+
+.GenreArea{
+  display: block;
+  background-color: var(--setumei--background--color);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 0;
+}
+.Genre_Ch{
+  display: block;
+  background-color: var(--textbox--border--color);
+  padding: 5px 10px;
+  border-radius: 50px;
+  margin: 5px 0;
+}
+
+.Genre_Ch.Btn_on,.RoomSetting .SironukiText_Text .Genre_Ch{
+  background-color: var(--accent--color);
+  color: var(--btn-text--color);
+
+}
+
+.Genre_Ch::before{
+  content: "#";
+
+}
+
+
+.RoomSetting{
+  color: var(--text--color);
+  background-color: var(--sub--background--color);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+}
+
+.RoomSetting .Text_label{
+  font-size: 0.7rem;
+  margin-top: 10px;
+}
+
+.RoomSetting .SironukiText_Text{
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.RoomSetting #title p{
+  display: inline-block;
+  margin: 0;
+}
+
+
+.RoomSetting .SironukiText_Text .Genre_Ch{
+  font-size: 0.8rem;
+  margin: 0 5px;
+}
+
+.RoomSetting #Gene,.RoomSetting #Member{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.RoomSetting #Member{
+  background-color: #F5F5F5;
+}
+
+.Member_m {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  text-align:center;
+  margin: 10px;
+  position: relative;
+  z-index: 100;
+}
+.Member_m .Member_m_label{
+  font-size: 15px;
+  width: 20px;
+  text-align: center;
+  margin-bottom: -10px;
+  margin-left: -50px;
+}
+
+.Member_m .Member_m_circle{
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #E85CB5;
+  margin-bottom: 5px;
+}
+
+
+.Member_m .Member_m_name{
+  width: 40px;
+  font-size: 8px;
+
+}
+
+.Member_m.My_name::after,.Member_m.My_name::before{
+  width: 140%;
+  height: 140%;
+  display: block;
+  content: "";
+  background-color: #FFFFFF;
+  position: absolute;
+  z-index: -100;
+  top: -20%;
+  border-radius: 10px;
+}
+.Member_m.My_name::after{
+border: 3px solid var(--accent--color);
+	-webkit-animation:blink 1s ease-in-out infinite alternate;
+    -moz-animation:blink 1s ease-in-out infinite alternate;
+    animation:blink 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+#write_start,#GameStart{
+  margin-top: 20px;
+}
+
+/******************/
+/*SetGene*/
+/*ここを増やすときは、GameRoomSetGenre.jsのSetGeneも増やす*/
+/******************/
+
+#love.Genre_Ch::after,.love.Genre_Ch::after{
+  content: "恋愛";
+}
+#mystery.Genre_Ch::after,.mystery.Genre_Ch::after{
+  content: "ミステリ";
+}
+#fantasy.Genre_Ch::after,.fantasy.Genre_Ch::after{
+  content: "ファンタジー";
+}
+#sf.Genre_Ch::after,.sf.Genre_Ch::after{
+  content: "SF";
+}
+#horror.Genre_Ch::after,.horror.Genre_Ch::after{
+  content: "ホラー";
+}
+#history.Genre_Ch::after,.history.Genre_Ch::after{
+  content: "歴史";
+}
+#fairy-tale.Genre_Ch::after,.fairy-tale.Genre_Ch::after{
+  content: "童話";
+}
+
+/******************/
+/*SetcircleColor*/
+/*ここを増やすときは、GameRoomSetGenre.jsのSetGeneも増やす*/
+/******************/
+#Member_1.Member_m_circle{
+  background-color:#ff0000 ;
+}
+#Member_2.Member_m_circle{
+  background-color:#ff9100 ;
+
+}
+#Member_3.Member_m_circle{
+  background-color:#fff200 ;
+
+}
+#Member_4.Member_m_circle{
+  background-color:#3aff24 ;
+
+}
+#Member_5.Member_m_circle{
+  background-color:#24ffe2 ;
+}
+#Member_6.Member_m_circle{
+  background-color:#0073ff ;
+
+}
+#Member_7.Member_m_circle{
+  background-color:#6200ff ;
+
+}
+#Member_8.Member_m_circle{
+  background-color:#ea00ff ;
+
+}
+#Member_9.Member_m_circle{
+  background-color:#000000 ;
+
+}
+#Member_10.Member_m_circle{
+  background-color:#08661b ;
+
+}

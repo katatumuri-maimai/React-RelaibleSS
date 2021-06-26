@@ -1,0 +1,446 @@
+/******************/
+/*WriteRoom*/
+/******************/
+
+.GameRoomWrite{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100vw;
+  min-width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  background-color: #fcfafa;
+  z-index: 10;
+}
+
+.GameRoomWrite_wrap{
+  display: block;
+  width: 100vw;
+  max-width:768px;
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0 auto;
+  background-color: var(--sub--background--color);
+  overflow-y: auto;
+}
+
+
+/******************/
+/*header*/
+/******************/
+#nobel_header{
+  width: 100vw;
+  height: 34px;
+  position: fixed;
+  top: 34px;
+  left: 0;
+  padding: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 6px var(--shadow--color);
+  z-index: 100;
+}
+
+#nobel_Title p{
+  display: inline-block;
+  margin: 0;
+}
+.nobel_header_wrap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width:768px;
+  margin: auto;
+}
+
+.nobel_header_info{
+  color: #bababa;
+  margin-top: -5px;
+}
+
+.nobel_header_info i{
+  margin: 0;
+}
+
+.nobel_header_info p{
+  font-size: 10px;
+  margin: 0;
+  margin-top: -5px;
+}
+
+
+.not_show{
+  display: none;
+}
+
+
+
+.test{
+  display: block;
+  height: 600px;
+  background-color: ;
+}
+
+
+
+/******************/
+/*小説の詳細*/
+/******************/
+.nobel_info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: calc(100vh - 34px);
+  background-color: #F5F5F5;
+  position: absolute;
+  right: 0;
+  top:34px;
+  z-index: 10000;
+  color: var(--text--color);
+}
+
+.nobel_info_wrap{
+  text-align: left;
+  width: 90%;
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+.nobel_info .btn_close{
+  background-color: #F5F5F5;
+  color: var(--text--color);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.nobel_info .Text_label{
+  font-size: 0.7rem;
+  margin-top: 10px;
+}
+
+.nobel_info .SironukiText_Text{
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.nobel_info #title{
+  justify-content: flex-start;
+  align-items: center;
+}
+.nobel_info #title p{
+  margin: 0;
+}
+
+.nobel_info #Gene{
+  justify-content: flex-start;
+}
+
+.nobel_info #Member{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.nobel_info .Member_m{
+  width: auto;
+  min-width: 70px;
+}
+
+
+.nobel_info .SironukiText_Text .Genre_Ch{
+  font-size: 0.8rem;
+  margin: 0 5px;
+}
+
+
+.nobel_info .Genre_Ch{
+  background-color: var(--accent--color);
+  color: var(--btn-text--color);
+
+}
+
+
+
+/******************/
+/*小説エリア*/
+/******************/
+
+#nobel_text{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: stretch;
+  width: 100%;
+  padding-top: 64px;
+  padding-bottom: 60px;
+  min-height: calc(var(--vh, 1vh) * 100);
+   overflow-y: auto;
+}
+
+#nobel_text.textArea_focus_novel_text{
+  padding-bottom: 150px;
+  height: calc(var(--vh, 1vh) * 100 -150px);
+
+}
+
+
+.GameRoomWrite .novel_entry_wrap{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+
+
+.novel_entry_wrap .Member_m{
+  width: 100px;
+  position: static;
+  flex-grow: 0;
+  flex-shrink:0;
+}
+
+.novel_entry_wrap.novel_right{
+flex-direction: row-reverse;
+justify-content: flex-start;
+}
+
+.novel_entry_text_wrap{
+  width: auto;
+  max-width: 60%;
+  height: auto;
+  background-color: #FFFFFF;
+  padding: 15px;
+  border: solid 3px #f5f5f5;
+  border-radius: 10px;
+  position: relative;
+}
+
+.novel_left .novel_entry_text_wrap::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  z-index: -1;
+  background-color: #FFFFFF;
+  top: 5px;
+  margin-left: -30px;
+  border: solid 3px #f5f5f5;
+  border-radius: 100px 0px 0px 10px;
+}
+.novel_left .novel_entry_text_wrap::after{
+  content: "";
+  display: block;
+  width: 5px;
+  height: 17px;
+  position: absolute;
+  z-index: 10;
+  background-color: #FFFFFF;
+  top: 10px;
+  margin-left: -18px;
+}
+
+
+
+.novel_right .novel_entry_text_wrap{
+  color: #FFFFFF;
+  background-color: var(--accent--color);
+  padding: 15px;
+  border: solid 3px #FFFFFF;
+  border-radius: 10px;
+}
+
+.novel_right .novel_entry_text_wrap::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  z-index: -1;
+  background-color: var(--accent--color);
+  top: 5px;
+  right: -15px;
+  border: solid 3px #FFFFFF;
+  border-radius: 80px 100px 0px 10px;
+}
+.novel_right .novel_entry_text_wrap::after{
+  content: "";
+  display: block;
+  width: 5px;
+  height: 18px;
+  position: absolute;
+  right: -5px;
+  z-index: 10;
+  background-color: var(--accent--color);
+  top: 9px;
+  margin-left: -18px;
+  border-right: none;
+}
+.novel_entry_text{
+  width: auto;
+  height: auto;
+  overflow-wrap: break-word;
+}
+
+
+.novel_entry_wrap.novel_left.text_dot .novel_entry_text_wrap{
+  border-radius: 30px;
+}
+.novel_entry_wrap.novel_left.text_dot .novel_entry_text{
+  display: block;
+  width: 3rem;
+}
+.novel_entry_wrap.novel_left.text_dot .novel_entry_text::before{
+  display: block;
+  content: "・・・";
+  overflow: hidden;
+  overflow-wrap: normal;
+  animation: typewriter 2s steps(44) 1s 1 normal both  ;
+}
+@keyframes typewriter{/*タイプライターライクなアニメーション*/
+  from{width: 0;}
+  to{width: 3rem;}
+}
+
+
+
+/******************/
+/*送信エリア*/
+/******************/
+#nobel_text_sent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background-color: var(--accent--color );
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px;
+}
+
+
+#nobel_text_input_wrap{
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+}
+
+/*  */
+#nobel_text_sent.textArea_focus_wrap{
+  height: 150px;
+  align-items: flex-end;
+}
+
+label#nobel_text_input{
+  display: none;
+}
+
+textarea#nobel_text_input{
+  height: 48px;
+  text-align: left;
+  border-radius: 50px;
+     overflow: hidden;
+}
+
+/*  */
+textarea#nobel_text_input.textArea_focus{
+  height: 130px;
+  border-radius: 10px;
+}
+
+
+#word_count{
+  color: var(--text--color);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+#word_count.word_count_error{
+  color: var(--accent--color);
+}
+
+
+#nobel_sent_btn{
+  display: flex;
+  align-items: center;
+  width: 50px ;
+  height: 50px;
+  font-size: 25px;
+  color: var(--accent--color);
+  border-radius: 100px;
+  background-color: #FFFFFF;
+  margin-left: 10px;
+  flex-grow: 0;
+  box-shadow: 0 5px 6px #612E2E;
+}
+
+
+#nobel_sent_btn i{
+  margin: 10px auto;
+}
+
+#nobel_text_sent.no_input{
+  background-color: var(--sent--teetarea-color);
+}
+#nobel_sent_btn.no_input{
+  color: var(--sent--teetarea-color);
+  box-shadow: none;
+}
+
+#word_count.word_count_error.no_input{
+  color: var(--sent--teetarea-color);
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #nobel_text_sent .textarea{
+    flex-grow: 50;
+    flex-shrink:50;
+  }
+
+  #nobel_sent_btn{
+    flex-grow: 0;
+    flex-shrink:0;
+  }
+}
+
+
+/* modal */
+.GameRoomWrite .modal{
+  z-index: 100000;
+}
+.GameRoomWrite .modal div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 100000;
+}
+
+.GameRoomWrite .modal .btn_square{
+  width: 90%;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.GameRoomWrite .modal .btn_square .a{
+}

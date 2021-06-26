@@ -1,0 +1,118 @@
+/*
+@media screen and (max-width: 767px) {
+
+}
+
+*/
+
+/* @import url("root.css"); */
+/******************/
+/*header*/
+/******************/
+
+header{
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-color: var(--header--background--color);
+  box-shadow: 0  3px 6px 0 var(--header--shadow--color);
+}
+
+.global_menu_btn{
+  display: none;
+}
+
+.logo{
+  display: block;
+  margin: 3px auto;
+  width: 141px;
+}
+
+
+.global_menu_mypage_btn{
+  display: none;
+}
+
+.global_menu_mypage_btn a{
+  text-decoration: none;
+}
+
+
+
+/*@media screen and (max-width: 767px) {*/
+  header{
+    height: 34px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .global_menu_btn,.global_menu_mypage_btn{
+    display: block;
+    width: 50px;
+    height: 32px;
+    position: absolute;
+    color: var(--main--color);
+    text-align: center;
+    margin: 1px;
+    top: 1px;
+  }
+
+  .global_menu_btn{
+    left: 0;
+  }
+
+  .global_menu_mypage_btn{
+    left: auto;
+    right: 0;
+  }
+
+  .global_menu_btn i{
+    font-size: 17px;
+  }
+  .global_menu_mypage_btn i{
+    font-size: 20px;
+  }
+
+  .global_menu_btn p, .global_menu_mypage_btn p{
+    font-size: 8px;
+    margin: 0;
+    margin-top: -5px;
+  }
+
+
+  .global_menu_mypage_btn a{
+    display: block;
+  }
+
+  .global_menu_mypage_btn a:link,.global_menu_mypage_btn a:visited{
+  color: var(--main--color);
+  }
+
+
+
+
+  nav.global_menu{
+    display: block;
+    width: 80vw;
+    height: 100vh;
+    background-color: var(--global_menu--background--color);
+    box-shadow: 0  3px 6px 0 var(--global_menu--shadow--color);
+    position: absolute;
+    top: 0;
+    /* left: -100vw; */
+    z-index: 1000;
+  }
+
+/*
+nav.global_menu_in{
+
+  left: 0vw;
+
+} */
+
+
+
+
+
+/*}*/

@@ -1,0 +1,111 @@
+/******************/
+/*Text*/
+/******************/
+
+main.NewGame .btn_square{
+  font-size: 1.2rem;
+  margin: 20px auto;
+}
+
+main .btn_square h2{
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.InfomationArea{
+  font-size: 0.9rem;
+  background-color: var(--setumei--background--color);
+  color: var(--text--color);
+  padding: 0.8rem 1.5rem;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+/******************/
+/*入力エリア*/
+/******************/
+input,textarea{
+  color: var(--text--color);
+  font-size: 1.2rem;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border:solid 3px var(--textbox--border--color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  resize: none;
+}
+
+input::placeholder,textarea::placeholder{
+  color: var(--textbox--text--placeholder--color);
+}
+
+input:focus,textarea:focus{
+  color: var(--text--color);
+  z-index: 100;
+  outline:0;
+}
+
+label{
+  display: block;
+  font-size: 0.8rem;
+  margin: 0;
+  position: relative;
+  color: var(--text--color);
+  text-align: left;
+}
+
+/******************/
+/*InputNumber*/
+/******************/
+.InputNumber{
+  font-size: 0.8rem;
+  margin: 20px 0;
+}
+
+
+.InputNumber{
+  position: relative;
+}
+
+
+/*InputNumberの上下ボタン*/
+
+.InputNumber::before,.InputNumber::after{
+    position: absolute;
+    font-size: 1.5rem;
+    pointer-events: none;
+    color: var(--textbox--border--color);
+    right: 10px;
+}
+
+.InputNumber::before {
+    bottom: 0.8rem;
+    content: "▲";
+  }
+
+.InputNumber::after {
+    bottom: -0.4rem;
+    content: "▼";
+  }
+
+
+
+.InputNumber input[type="number"]::-webkit-outer-spin-button,
+.InputNumber input[type="number"]::-webkit-inner-spin-button {
+      position: absolute;
+      top: 0; bottom: 0;
+      right: 0;
+      margin: auto;
+      transform: scale(5);
+      transform-origin: right center;
+      opacity: 0.3;
+}

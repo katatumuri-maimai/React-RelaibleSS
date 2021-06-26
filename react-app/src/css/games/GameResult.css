@@ -1,0 +1,99 @@
+/******************/
+/*WriteRoom*/
+/******************/
+.GameResult .btn_maincolor {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.GameResult .btn_accentcolor {
+  width: 137px;
+  display: flex;
+  align-items: center;
+}
+
+.GameResult .btn_accentcolor.h2{
+  display: block;
+  width: 100%;
+}
+
+
+.screenShot_arget{
+  position: absolute;
+  width: 300px;
+  top: -100000px;
+  left: -1000px;
+  background-color: var(--sub--background--color);
+}
+
+.GameResult #copyTarget{
+  height: 50vh;
+}
+
+
+#savenovel_text, #savenovel_image{
+  margin-top: 1000px;
+  margin-bottom: 100vh;
+}
+
+
+
+
+
+/******************/
+/*スクショする小説の設定*/
+/******************/
+.novel_title{
+  height: 40px;
+  background-color: var(--accent--color );
+  color: var(--btn-text--color );
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.novel_title p{
+  margin: 0;
+}
+
+
+.novel_Gene{
+  justify-content: flex-end;
+}
+
+
+.novel_Gene .Genre_Ch{
+  margin: 10px;
+}
+
+.GameResult .novel_entry_wrap{
+  padding: 10px;
+  color: var(--text--color );
+}
+.novel_text .text{
+  display: block;
+  padding: 15px 10px;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  border: #D8D8D8 3px solid;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+.novel_text .name{
+  font-size: 10px;
+  text-align: right;
+  color: #808080;
+}
+
+.novel_footer{
+  display: block;
+  height: 35px;
+  background-color: var(--accent--color );
+  color: var(--btn-text--color );
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+
+}

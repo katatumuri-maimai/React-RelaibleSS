@@ -1,0 +1,43 @@
+
+
+/*全体設定*/
+:root{
+  --main--color : #FFC70D;
+  --accent--color : #E85C5C;
+  --text--color : #808080;
+  --btn-text--color : #FFFFFF;
+  --shadow--color : #BEBEBE;
+  --border--color : #D8D8D8;
+  --setumei--background--color : #F5F5F5;
+  --sub--background--color:#FFFAEE;
+}
+
+
+/*header*/
+:root{
+  --header--background--color :#FFFFFF;
+  --header--shadow--color :#BEBEBE;
+}
+
+:root{
+  --global_menu--background--color :#FFFFFF;
+  --global_menu--shadow--color :#BEBEBE;
+}
+
+
+/*topbtn*/
+:root{
+  --topbtn--background--color :#E8795C;
+  --topbtn--color :#FFFFFF;
+}
+
+/*textbox*/
+:root{
+  --textbox--text--placeholder--color : #D8D8D8;
+  --textbox--border--color : #D8D8D8;
+}
+
+/*WriteRoom*/
+:root{
+  --sent--teetarea-color:#808080;
+}

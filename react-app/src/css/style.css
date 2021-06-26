@@ -1,0 +1,107 @@
+/*
+@media screen and (max-width: 767px) {
+
+}
+
+*/
+
+/* @import url("root.css"); */
+@font-face {
+  font-family: 'GenjyuuGothic'; /* 好きな名前を設定します。*/
+  src: url('../fonts/GenJyuuGothic-Regular.woff') format('woff');
+}
+
+
+/******************/
+/*全体設定*/
+/******************/
+html{
+  margin: 0;
+}
+
+body{
+  font-family: 'GenjyuuGothic';
+  margin: 0 auto;
+  font-size: 16px;
+  min-height: 100vh; /* Fallback */
+  min-height: calc(var(--vh, 1vh) * 100);
+  position: relative;
+  padding-bottom: 80px; /*フッターの高さ*/
+  box-sizing: border-box;
+}
+
+
+
+/* @media screen and (max-width: 767px) {
+  body{
+  padding: 0;
+  }
+
+} */
+
+
+main{
+  max-width: 920px;
+  margin: auto;
+}
+
+main{
+  padding: 20px 0;
+}
+
+ul{
+  list-style: none;
+}
+
+
+
+a:link ,a:-webkit-any-link
+{
+  color: var(--text--color );
+}
+
+
+/*スマホ表示*/
+/*@media screen and (max-width: 767px) {*/
+  body{
+    margin-top: -34px;
+  }
+
+/*}*/
+
+
+
+
+
+/******************/
+/*共通クラス*/
+/******************/
+.flex_row{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.flex_column{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/******************/
+/*スクロールバー*/
+/******************/
+::-webkit-scrollbar{
+  width: 7px;
+}
+::-webkit-scrollbar-track{
+  background: #FFFFFF;
+  border: none;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0px var(--header--shadow--color);
+}
+::-webkit-scrollbar-thumb{
+  background: var(--header--shadow--color);
+  border-radius: 10px;
+  box-shadow: none;
+}
